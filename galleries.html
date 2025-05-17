@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvindd Kumar - Galleries</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Quicksand:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-right">
+        <div class="nav-logo">
+            <span class="logo-text">SK</span>
+        </div>
+        <div class="nav-title">
+            <h1 class="typing-title">Welcome to My E-Portfolio</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Profile</a></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="galleries.html">Galleries</a></li>
+        </ul>
+    </nav>
+
+    <section id="galleries" class="section active fade-in">
+        <div class="clock-container">
+            <div class="clock">
+                <div class="clock-face">
+                    <div class="hand hour-hand"></div>
+                    <div class="hand minute-hand"></div>
+                    <div class="hand second-hand"></div>
+                    <div class="center-dot"></div>
+                </div>
+            </div>
+            <p id="datetime"></p>
+            <p class="clock-quote">"Time is the canvas of your journey—paint it with purpose."</p>
+        </div>
+        <h1>My Galleries</h1>
+        <div class="decorative-element">
+            <i class="fas fa-project-diagram"></i>
+            <i class="fas fa-users"></i>
+        </div>
+        <p class="interactive-text">Here’s a showcase of my projects, documents, and extracurricular involvement through an interactive gallery 🖼️. Dive into my work!</p>
+
+        <h3>Projects & Documents</h3>
+        <div class="filter-controls">
+            <button onclick="applyFilter('none')">Original</button>
+            <button onclick="applyFilter('grayscale')">Grayscale</button>
+            <button onclick="applyFilter('sepia')">Sepia</button>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="swiftpark.jpg" alt="Project 1" class="portfolio-img" onclick="openLightbox(this.src, 'Project 1')">
+                <h3>SwiftPark UUM</h3>
+                <p>I developed a mobile application called SwiftParkUUM, designed to help UUM students find suitable parking spots more easily. 🚗📱 
+                    We used Adalo for app development and Figma for UI/UX design. 
+                    The goal was to reduce time spent searching for parking and improve the overall campus experience through a user-friendly solution.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="badminton.jpg" alt="Project 2" class="portfolio-img" onclick="openLightbox(this.src, 'Project 2')">
+                <h3>Badminton Racquet Finder System</h3>
+                <p>I created a Badminton Racquet Finder using NetBeans and Java, aimed at helping players choose the most suitable racquet based on their gameplay style. 🏸💻 
+                The system takes into account factors like playstyle, experience level, and injury history to provide personalized recommendations 
+                — making it easier for players to find the right match without needing expert knowledge.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="brand24.jpg" alt="Document 1" class="portfolio-img" onclick="openLightbox(this.src, 'Document 1')">
+                <h3>Brand24</h3>
+                <p>I used Brand24, a powerful tool that tracks and extracts data from social media platforms. 📊✨ 
+                It helped me monitor online mentions, analyze trends, and gather valuable insights — perfect for understanding audience behavior and brand presence across the web.</p>
+            </div>
+        </div>
+        <h3>Extracurricular Involvement</h3>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3>Continental Students' Association Club (CSA)</h3>
+                <p>Served as an EXCO member, organizing cultural and academic events to foster student engagement at UPSI.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Kelab Kebudayaan Bharatanatyam Club (KKB)</h3>
+                <p>As an EXCO member, I contributed to promoting traditional dance and cultural awareness among students.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Japanese Language Club (UUM)</h3>
+                <p>Active member for 2 years, participating in language workshops and cultural events to enhance my Japanese proficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">×</span>
+        <img id="lightbox-img" src="" alt="Lightbox Image">
+        <p id="lightbox-caption"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvindd Kumar - Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Quicksand:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-right">
+        <div class="nav-logo">
+            <span class="logo-text">SK</span>
+        </div>
+        <div class="nav-title">
+            <h1 class="typing-title">Welcome to My E-Portfolio</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Profile</a></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="galleries.html">Galleries</a></li>
+        </ul>
+    </nav>
+
+    <section id="profile" class="section active">
+        <div class="profile-container">
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3 class="decorated-heading">Languages</h3>
+                    <div class="skills-list" id="language-list">
+                        <span class="skill clickable" onclick="showLanguageInfo('English')">English (Native)</span>
+                        <span class="skill clickable" onclick="showLanguageInfo('Malay')">Malay (Fluent)</span>
+                        <span class="skill clickable" onclick="showLanguageInfo('Tamil')">Tamil (Native)</span>
+                        <span class="skill clickable" onclick="showLanguageInfo('Japanese')">Japanese (Proficient)</span>
+                    </div>
+                    <div id="language-info" class="language-info"></div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="decorated-heading">Skills Progress</h3>
+                    <div class="progress-container">
+                        <div class="progress-item">Language <div class="progress-bar" style="width: 90%; background-color: #1abc9c;"></div></div>
+                        <div class="progress-item">Communication <div class="progress-bar" style="width: 85%; background-color: #e67e22;"></div></div>
+                        <div class="progress-item">Tech Skills <div class="progress-bar" style="width: 70%; background-color: #9b59b6;"></div></div>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="decorated-heading">Connect with Me</h3>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/channel/UCWyPnwKFZMymvwihTgN8BTA" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://x.com/sarvindd6?s=21&t=_9cAZrh0zoDwufSdQaLzsw" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/sarvindd-kumar-bbbb321a7" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Sarvindd" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="http://wa.link/f5faam" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:sarvinddkumarjr@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="decorated-heading">Quick Quiz</h3>
+                    <div class="quiz-container">
+                        <p class="interactive-text">Which language should you learn next? 🤔</p>
+                        <button onclick="showQuizResult('Japanese')">Japanese</button>
+                        <button onclick="showQuizResult('Spanish')">Spanish</button>
+                        <button onclick="showQuizResult('Mandarin')">Mandarin</button>
+                        <div id="quiz-result" class="quiz-result"></div>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <div class="clock-container">
+                    <div class="clock">
+                        <div class="clock-face">
+                            <div class="hand hour-hand"></div>
+                            <div class="hand minute-hand"></div>
+                            <div class="hand second-hand"></div>
+                            <div class="center-dot"></div>
+                        </div>
+                    </div>
+                    <p id="datetime"></p>
+                    <p class="clock-quote">"Time is the canvas of your journey—paint it with purpose."</p>
+                </div>
+                <h1 class="typing-name">Sarvindd Kumar a/l S.Vijayan</h1>
+                <h2 class="headline">Linguistic Tech Enthusiast | Bridging Language & Innovation</h2>
+                <div class="avatar-frame">
+                    <img src="pp.jpg" alt="Profile Picture" class="profile-pic bounce">
+                </div>
+                <p class="interactive-text">I'm a 23-year-old undergrad at Universiti Utara Malaysia (UUM), diving into a Bachelor's in Arts Linguistic and Information Technology. I graduated with a Diploma in English from Sultan Idris Education University (UPSI) with a CGPA of 3.91 🎓. Fluent in English, Malay, Tamil, and proficient in Japanese, I’m passionate about blending language with tech to create impactful solutions. I always give my all, balancing academics and lifestyle with flair!</p>
+                <div class="video-placeholder">
+                    <img src="YTpreview.jpg" alt="Video Preview" class="video-img">
+                    <a href="https://www.youtube.com/channel/UCWyPnwKFZMymvwihTgN8BTA" target="_blank" class="play-btn"><i class="fas fa-play"></i></a>
+                </div>
+
+                <h3 class="decorated-heading">About Me</h3>
+                <div class="decorative-element">
+                    <i class="fas fa-book-open"></i>
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h4>Education Timeline</h4>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>2015-2019</h4>
+                        <p>SMK King Edward - High School (Student of the Month, Ketua Kelas, Japanese Achievement)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>2020-2022</h4>
+                        <p>UPSI - Diploma in English (CGPA 3.91, Dean's List)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>2022-Present</h4>
+                        <p>UUM - Bachelor's in Arts Linguistic and Information Technology</p>
+                    </div>
+                </div>
+                <h4>Degree Progress</h4>
+                <div class="progress-tracker">
+                    <p>Degree Completion: 75%</p>
+                    <div class="progress-bar" style="width: 75%; background-color: #e67e22;"></div>
+                </div>
+                <p class="interactive-text">I’m currently studying at Universiti Utara Malaysia (UUM), pursuing a Bachelor's in Arts Linguistic and Information Technology. I completed my Diploma in English at Universiti Pendidikan Sultan Idris (UPSI) from 2020 to 2022, graduating with a CGPA of 3.91 in just 2 years—a program that typically takes 3 years 📚. I enrolled in my degree program the same year I graduated, reflecting my drive to seize opportunities. This dedication is what I bring to my career and any team I join!</p>
+                <p>Before that, I studied at SMK King Edward from 2015 to 2019, earning accolades like Student of the Month (May) and SPM International Language Achievement for Japanese.</p>
+                <h4>Hard Skills</h4>
+                <div class="skills-list">
+                    <span class="skill clickable" onclick="showSkillInfo('Language')">Language and Communication</span>
+                    <span class="skill clickable" onclick="showSkillInfo('Writing')">Writing and Verbal Skills</span>
+                    <span class="skill clickable" onclick="showSkillInfo('Computer')">Computer Skills</span>
+                    <span class="skill clickable" onclick="showSkillInfo('Editing')">Editing</span>
+                </div>
+                <div id="skill-info" class="skill-info"></div>
+                <h4>Soft Skills</h4>
+                <div class="skills-list">
+                    <span class="skill clickable" onclick="showSkillInfo('QuickLearner')">Quick Learner</span>
+                    <span class="skill clickable" onclick="showSkillInfo('Criticism')">Ability to Accept Criticism</span>
+                    <span class="skill clickable" onclick="showSkillInfo('Leadership')">Leadership and Teamwork</span>
+                    <span class="skill clickable" onclick="showSkillInfo('Organized')">Organized, Good Work-Life Balance</span>
+                </div>
+                <h4>Achievements</h4>
+                <div class="awards-grid">
+                    <div class="award-item">
+                        <i class="fas fa-trophy"></i>
+                        <h5>Dean's List (UPSI)</h5>
+                        <p>Awarded for all semesters at UPSI for academic excellence.</p>
+                    </div>
+                    <div class="award-item">
+                        <i class="fas fa-trophy"></i>
+                        <h5>MUET Band 4</h5>
+                        <p>Achieved Band 4 in the Malaysian University English Test.</p>
+                    </div>
+                    <div class="award-item">
+                        <i class="fas fa-trophy"></i>
+                        <h5>Students Exchange Program</h5>
+                        <p>Participated in the Malaysia-Japan Student Exchange Program.</p>
+                    </div>
+                    <div class="award-item">
+                        <i class="fas fa-trophy"></i>
+                        <h5>Japanese Drama Competition</h5>
+                        <p>2nd Runner Up in a national Japanese Drama Competition.</p>
+                    </div>
+                    <div class="award-item">
+                        <i class="fas fa-trophy"></i>
+                        <h5>Google Fundamentals</h5>
+                        <p>Completed Online Google Fundamental Programs Certification.</p>
+                    </div>
+                    <div class="award-item">
+                        <i class="fas fa-trophy"></i>
+                        <h5>National Day Parade</h5>
+                        <p>Performed in the School Band at the state level.</p>
+                    </div>
+                    <div class="award-item">
+                        <i class="fas fa-trophy"></i>
+                        <h5>Piano Grade 5</h5>
+                        <p>Achieved Grade 5 in both Theory and Practical.</p>
+                    </div>
+                    <div class="award-item">
+                        <i class="fas fa-trophy"></i>
+                        <h5>Taekwondo Grade 8</h5>
+                        <p>Earned Grade 8 in Taekwondo.</p>
+                    </div>
+                </div>
+                <h4>Reflection</h4>
+                <p class="interactive-text">My journey in linguistics and tech has taught me perseverance and adaptability 🌟. Balancing academics with extracurriculars, like being an EXCO member of the Continental Students' Association Club and Kelab Kebudayaan Bharatanatyam Club at UPSI, has sharpened my time management and leadership skills. My short-term goal is to boost my web development skills, while my long-term dream is to become a tech consultant bridging language and innovation. This portfolio showcases my growth, and I’m excited to keep evolving!</p>
+                <h4>Books That Inspire Me</h4>
+                <div class="bookshelf">
+                    <div class="book">
+                        <div class="book-header">
+                            <i class="fas fa-book"></i>
+                            <h4>The Atomic Habit</h4>
+                        </div>
+                        <p>Learned the power of small habits for big changes.</p>
+                        <img src="atomic.jpg" alt="Atomic Habit Cover" class="book-cover">
+                    </div>
+                    <div class="book">
+                        <div class="book-header">
+                            <i class="fas fa-book"></i>
+                            <h4>Harry Potter</h4>
+                        </div>
+                        <p>Inspired my love for storytelling and imagination.</p>
+                        <img src="harry.jpg" alt="Harry Potter Cover" class="book-cover">
+                    </div>
+                    <div class="book">
+                        <div class="book-header">
+                            <i class="fas fa-book"></i>
+                            <h4>The Over-Thinking Cure</h4>
+                        </div>
+                        <p>Helped me manage overthinking and stay focused.</p>
+                        <img src="overthinking.jpg" alt="Over-Thinking Cure Cover" class="book-cover">
+                    </div>
+                    <div class="book">
+                        <div class="book-header">
+                            <i class="fas fa-book"></i>
+                            <h4>Ikigai</h4>
+                        </div>
+                        <p>Guided me to find purpose and balance in life.</p>
+                        <img src="ikigai.jpg" alt="Ikigai Cover" class="book-cover">
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <button id="audio-toggle" class="audio-btn"><i class="fas fa-volume-up"></i> Toggle Music</button>
+        <audio id="background-audio" loop>
+            <source src="https://www.royaltyfreemusicclips.com/files/royalty-free-jazz.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
